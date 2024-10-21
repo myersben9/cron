@@ -15,7 +15,7 @@ export async function sendMail({ to, subject, text, html, outlook }: { to: strin
                 },
             });
             await transporter.sendMail({
-                from: 'Ben Myers <process.env.SMTP_USER>',
+                from: 'Ben Myers process.env.SMTP_USER',
                 to,
                 subject,
                 text,
@@ -32,7 +32,7 @@ export async function sendMail({ to, subject, text, html, outlook }: { to: strin
                 },
             });
             await transporter.sendMail({
-                from: 'Ben Myers <process.env.OUTLOOK_SMTP_USER>',
+                from: 'Ben Myers process.env.OUTLOOK_SMTP_USER',
                 to,
                 subject,
                 text,
