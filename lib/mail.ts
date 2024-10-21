@@ -32,7 +32,7 @@ export async function sendMail({ to, subject, text, html, outlook }: { to: strin
                 },
             });
             await transporter.sendMail({
-                from: process.env.OUTLOOK_SMTP_USER,
+                from: process.env.SMTP_USER,
                 to,
                 subject,
                 text,
